@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>買い物の合計金額</h1>
+
+        <p>
+            価格：
+            <input type="number" v-model.number="price">
+            円
+        </p>
+
+        <p>
+            数量：
+            <input type="number" v-model.number="quantity">
+        </p>
+
+        <p>合計：{{ price * quantity }}円</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

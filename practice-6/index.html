@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>好きなジャンル</h1>
+
+        <p>ShiftまたはCtrl（Cmd）キーを押しながら選択してください。</p>
+
+        <label>
+            <select v-model="genres" multiple>
+                <option value="映画">映画</option>
+                <option value="音楽">音楽</option>
+                <option value="ゲーム">ゲーム</option>
+                <option value="スポーツ">スポーツ</option>
+            </select>
+        </label>
+
+        <p>選択中：{{ genres.join("、") }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

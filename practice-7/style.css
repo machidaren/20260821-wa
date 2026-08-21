@@ -1,0 +1,14 @@
+textarea {
+  display: block;
+  width: 300px;
+  height: 100px;
+  margin-top: 8px;
+}
+
+p {
+  margin: 12px 0;
+}
+
+.comment {
+  font-weight: bold;
+}

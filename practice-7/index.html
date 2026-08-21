@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>コメント入力</h1>
+
+        <label>
+            コメント：
+            <textarea v-model="comment"></textarea>
+        </label>
+
+        <p>入力内容：</p>
+        <p>{{ comment }}</p>
+
+        <p>文字数：{{ comment.length }}文字</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

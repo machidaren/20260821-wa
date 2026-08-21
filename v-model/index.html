@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>名前入力</h1>
+
+        <label>
+            名前：
+            <input type="text" v-model="name">
+        </label>
+
+        <p>こんにちは、{{ name }}さん！</p>
+
+        <button @click="clearName">クリア</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
